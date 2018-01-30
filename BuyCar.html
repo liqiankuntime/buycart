@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="buyCarJs.js"></script>
+</head>
+<body>
+<table id="cartTable">
+	<thead>
+		<tr>
+			<td><label><input class="check-all check" type="checkbox">&nbsp;全选</label></td>
+			<td>商品</td>
+			<td>单价</td>
+			<td>数量</td>
+			<td>小记</td>
+			<td>操作</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="checkbox"><input class="check-one check" type="checkbox"></td>
+			<td class="goods">
+				<img src="./images/1.jpg" alt="">
+				<span>Casio/卡西欧</span>
+			</td>
+			<td class="price">342.88</td>
+			<td class="count">
+				<span class="reduce"></span>
+				<input class="count-input" type="text" value="1">
+				<span class="add">+</span>
+			</td>
+			<td class="subtotal">342.88</td>
+			<td class="operation"><span class="delete">删除</span></td>
+		</tr>
+		<tr>
+			<td class="checkbox"><input class="check-one check" type="checkbox"></td>
+			<td class="goods">
+				<img src="./images/2.jpg" alt="">
+				<span>canon/佳能</span>
+			</td>
+			<td class="price">123.88</td>
+			<td class="count">
+				<span class="reduce"></span>
+				<input class="count-input" type="text" value="1">
+				<span class="add">+</span>
+			</td>
+			<td class="subtotal">123.88</td>
+			<td class="operation"><span class="delete">删除</span></td>
+		</tr>
+		<tr>
+			<td class="checkbox"><input class="check-one check" type="checkbox"></td>
+			<td class="goods">
+				<img src="./images/3.jpg" alt="">
+				<span>sony/索尼</span>
+			</td>
+			<td class="price">123.88</td>
+			<td class="count">
+				<span class="reduce"></span>
+				<input class="count-input" type="text" value="1">
+				<span class="add">+</span>
+			</td>
+			<td class="subtotal">123.88</td>
+			<td class="operation"><span class="delete">删除</span></td>
+		</tr>
+		<tr>
+			<td class="checkbox"><input class="check-one check" type="checkbox"></td>
+			<td class="goods">
+				<img src="./images/4.jpg" alt="">
+				<span>fusi/富士</span>
+			</td>
+			<td class="price">321.88</td>
+			<td class="count">
+				<span class="reduce"></span>
+				<input class="count-input" type="text" value="1">
+				<span class="add">+</span>
+			</td>
+			<td class="subtotal">321.88</td>
+			<td class="operation"><span class="delete">删除</span></td>
+		</tr>
+	</tbody>
+</table>
+
+<div class="foot" id="foot">
+	<label class="fl select-all"> <input class="check-all check" type="checkbox">全选</label>
+	<a class="fl delete" id="deleteAll" href="javascript:;">删除</a>
+	<div class="fr closing">结 算</div>
+	<div class="fr total">合计:¥ <span id="priceTotal">0.00</span></div>
+	<div class="fr selected" id="selected">
+		已选商品
+		<span id="seletedTotal"> 0 </span>件
+		<span class="arrow up">︽</span>
+		<span class="arrow down">︾</span>
+	</div>
+	<div class="fr selected-view">
+		<div id="selectedViewList" class="clearfix">
+
+		</div>
+		<span class="arrow">◆<span>◆</span> </span>
+	</div>
+</div>
+</body>
+</html>
